@@ -1,0 +1,67 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Создать заявку</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="logo-st" href="./index.html"><div class="logo">Мой Ремонт</div></a>
+      <nav class="nav">
+        <a href="../cards/">Заявки</a>
+        <a href="./">Создать</a>
+        <div class="profile">
+          <button class="profile-btn">
+            Профиль
+          </button>
+          <div id="profile-dropdown" class="dropdown-content">
+            <a href="#" class="logout-btn">Выйти</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="form-container">
+        <h1>Создать новую заявку</h1>
+        <form id="create-form">
+          <div class="form-group">
+            <label for="card-address">Адрес объекта</label>
+            <input type="text" id="card-address" required />
+          </div>
+          <div class="form-group">
+            <label for="card-type">Вид работ</label>
+            <select class="status-select" id="card-type" required>
+              <option>Косметический ремонт</option>
+              <option>Капитальный ремонт</option>
+              <option>Электромонтаж</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="card-date">Дата</label>
+            <input type="date" id="card-date" required />
+          </div>
+          <div class="form-group">
+            <label for="card-time">Время</label>
+            <input type="time" id="card-time" required />
+          </div>
+          <div class="form-group">
+            <label for="card-pay">Вид оплаты</label>
+            <select class="status-select" id="card-pay" required>
+              <option>наличный</option>
+              <option>банковской картой</option>
+              <option>безналичный расчёт</option>
+            </select>
+          </div>
+          <button type="submit">Создать карточку</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

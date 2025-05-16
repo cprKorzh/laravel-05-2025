@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Вход</title>
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<a class="logo-st" href="./index.html"><div class="logo">Мой Ремонт</div></a>
+			<nav class="nav">
+				<a href="../">Регистрация</a>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="form-container">
+				<h1>Вход</h1>
+				<form id="login-form">
+					<div class="form-group">
+						<label for="login-username">Логин</label>
+						<input type="text" id="login-username" required />
+					</div>
+					<div class="form-group">
+						<label for="login-password">Пароль</label>
+						<input type="password" id="login-password" required />
+					</div>
+					<button type="submit">Вход</button>
+				</form>
+				<p style="margin-top: 15px; text-align: center">
+					У вас нет аккаунта?
+					<a href="../">Зарегистрироваться</a>
+				</p>
+			</div>
+		</div>
+
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>

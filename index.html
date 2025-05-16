@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="logo-st" href="./index.html"><div class="logo">Мой Ремонт</div>
+      <nav class="nav">
+        <a href="./login/">Вход</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="form-container">
+        <h1>Регистрация</h1>
+        <form id="register-form">
+          <div class="form-group">
+            <label for="register-fio">Фамилия</label>
+            <input type="text" id="register-fio" required />
+          </div>
+          <div class="form-group">
+            <label for="register-fio">Имя</label>
+            <input type="text" id="register-name" required />
+          </div>
+          <div class="form-group">
+            <label for="register-fio">Отчество</label>
+            <input type="text" id="register-middlename" required />
+          </div>
+          <div class="form-group">
+            <label for="register-tel">Телефон</label>
+            <input type="tel" id="register-tel" required />
+          </div>
+          <div class="form-group">
+            <label for="register-email">Адрес электронной почты</label>
+            <input type="email" id="register-email" required />
+          </div>
+          <div class="form-group">
+            <label for="register-username">Логин</label>
+            <input type="text" id="register-username" required />
+          </div>
+          <div class="form-group">
+            <label for="register-password">Пароль</label>
+            <input type="password" id="register-password" required />
+          </div>
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p style="margin-top: 15px; text-align: center">
+          У вас уже есть аккаунт
+          <a href="./login/">Вход</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

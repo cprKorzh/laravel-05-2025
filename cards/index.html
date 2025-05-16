@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заявки</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="logo-st" href="./index.html"><div class="logo">Мой Ремонт</div></a>
+      <nav class="nav">
+        <a href="./">Заявки</a>
+        <a href="../create/">Создать заявку</a>
+        <div class="profile">
+          <button class="profile-btn">
+            Профиль (<span id="username">Пользователь</span>)
+          </button>
+          <div id="profile-dropdown" class="dropdown-content">
+            <a href="#" class="logout-btn">Выход</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Заявки</h1>
+      <div id="cards-container" class="cards-container">
+      </div>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
