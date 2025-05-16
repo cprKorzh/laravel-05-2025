@@ -6,4 +6,4 @@ docker build -t demo .
 docker run -p 9000:80 demo
 
 Ссылка - https://laravel.gurtenkoserver.ru/
-Ресурс - 
+Ресурс - https://github.com/cprKorzh/laravel-05-2025.git
